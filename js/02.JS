@@ -63,12 +63,37 @@ console.log(boolean)
 // console.log(typeof valueinNumber)
 // console.log(valueinNumber)
 
-let value=null
+// let value=null
+
+// let valueinNumber=Number(value)
+
+// console.log(typeof valueinNumber)
+// console.log(valueinNumber)
+
+let value=undefined
 
 let valueinNumber=Number(value)
 
 console.log(typeof valueinNumber)
 console.log(valueinNumber)
+
+let loggedin=""
+let booleanloogedin=Boolean(loggedin)
+
+console.log(typeof booleanloogedin)
+console.log(booleanloogedin)
+
+let astring=33
+
+let stringconvertkro=String(astring)
+
+console.log(stringconvertkro)
+console.log(typeof stringconvertkro)
+
+
+
+// The dollar sign $ is allowed in variable names, but $ alone isn’t a pre-defined value in JavaScript unless you define it yourself. If $ is undefined in your code, it will throw a ReferenceError.
+
 
 
 
