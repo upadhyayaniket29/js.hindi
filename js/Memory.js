@@ -24,6 +24,7 @@ let heap1={
 let heap2=heap1
 
 heap2.myname1="upadhyay"
+// Object ko access krna ka tarika
 
 console.log(heap1.myname1)
 console.log(heap2.myname1)

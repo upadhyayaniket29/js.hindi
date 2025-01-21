@@ -4,7 +4,7 @@
 
 // console.log(name +repocount+" value");
 
-// //  +++++++++++++++++++String Interpolation+++++++++++++++++
+//  +++++++++++++++++++String Interpolation+++++++++++++++++
 
 
 // console.log(`hello my name is  ${name} and my repo count is ${repocount}` )
