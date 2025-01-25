@@ -151,6 +151,28 @@ console.log(gameName.toLocaleUpperCase());
 console.log(gameName.padStart(16));
 // In JavaScript, the .padStart() method generates a new string of a specified length by adding a given padding string to the beginning of the original string. The padding string is repeated as needed until the target length is reached.
 
+console.log(gameName.slice(-5,4));
+// Description. The slice() method extracts a part of a string . The slice() method returns the extracted part in a new string.
+console.log(gameName.substring(-8,4));
+// The substr() method extracts a part of a string . The substr() method begins at a specified position, and returns a specified number of characters. 
+
+
+const url="aniket-updadhyay-com"
+console.log(url.replace('-','.'));
+// The replace function in JavaScript replaces part of a string, but it only replaces the first occurrence of the matching pattern by default. 
+console.log(url.includes('aniket'));
+console.log(url.includes('aryan'));
+
+// Convert String into array 
+
+console.log(gameName.split('-'))
+// The split() method of String values takes a pattern and divides this string into an ordered list of substrings by searching for the pattern, puts these substrings into an array, and returns the array.
+// Based on something We divide the array , here we divide by based on dash
+
+
+
+
+
 
 
 
