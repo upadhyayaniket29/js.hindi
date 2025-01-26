@@ -1,6 +1,10 @@
 const arr=[0,1,2,3,4]
 console.log(arr[0])
 
+// we get prototype in array too 
+
+// ++++ Array Methods +++++
+
 arr.push(6)
 arr.pop()
 arr.unshift(9)
