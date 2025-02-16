@@ -1,4 +1,9 @@
-let newday=new Date()
-console.log(newday.getDay())
-console.log(newday.getMonth())
-console.log(newday.getYear())
+onst score=200
+
+// if(score>100){
+//     const power="fly"
+//     console.log(`user power:${power}`);
+    
+    
+// }
+// console.log(`user power:${power}`);
