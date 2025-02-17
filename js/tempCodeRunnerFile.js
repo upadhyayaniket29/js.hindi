@@ -1,9 +1,4 @@
-onst score=200
-
-// if(score>100){
-//     const power="fly"
-//     console.log(`user power:${power}`);
-    
+for (let index = 0; index < 10; index++) {
+//     const element = index;
     
 // }
-// console.log(`user power:${power}`);
