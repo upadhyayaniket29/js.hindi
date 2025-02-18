@@ -191,11 +191,11 @@ const coding=["java","ruby","cpp","python","js"]
 
 // })
 
-// function PrintMe(item){
-//     console.log(item);
+function PrintMe(item){
+    console.log(item);
     
-// }
-// coding.forEach(PrintMe) // function ka refrence dena hai printing it will do by itself
+}
+coding.forEach(PrintMe) // function ka refrence dena hai printing it will do by itself
 
 
 // coding.forEach( (item,index,arr)=>{
@@ -209,28 +209,28 @@ const coding=["java","ruby","cpp","python","js"]
 // There are two ways in which the callback may be called: synchronous and asynchronous. Synchronous callbacks are called immediately after the invocation of the outer function, with no intervening asynchronous tasks, while asynchronous callbacks are called at some point later, after an asynchronous operation has completed.
 
 
-const MyCoding=[ 
-    {
+// const MyCoding=[ 
+//     {
 
-     langName:"Java",
-     langFileName:"java"
-},
-    {
+//      langName:"Java",
+//      langFileName:"java"
+// },
+//     {
 
-     langName:"JavaScipt",
-     langFileName:"js"
-},
-    {
+//      langName:"JavaScipt",
+//      langFileName:"js"
+// },
+//     {
 
-     langName:"C++",
-     langFileName:"cpp"
-}
-]
+//      langName:"C++",
+//      langFileName:"cpp"
+// }
+// ]
 
-MyCoding.forEach( (item,index,arr)=>{
- console.log(item.langName,index,arr);// sirf item krne se object milta sabko item hi bola hai saare objects ko
+// MyCoding.forEach( (item,index,arr)=>{
+//  console.log(item.langName,index,arr);// sirf item krne se object milta sabko item hi bola hai saare objects ko
  
-})
+// })
 
 
 
@@ -243,11 +243,54 @@ const Nums=[1,2,3,4,5,6,7,8,9,10]
 
 //     return item>4  // In Place of curly braces we need to write the return statement
 // }) 
-console.log(NewNumber);
+// console.log(NewNumber);
 
 // The filter() method of Array instances creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function.
 
 
+// Same filter Procedure using for Each 
+const numarr=[]
+
+Nums.forEach( (num)=>{
+  if(num>4){
+    numarr.push(num)
+  }
+})
+console.log(numarr);
+
+
+
+
+
+const Books=[
+    {
+        title:'book one',genre:"fiction",publish:1996,
+        edition:2010
+    },
+    {
+        title:'book two',genre:"non fiction",publish:2012,
+        edition:2017
+    },
+    {
+        title:'book three',genre:"gk",publish:2002,
+        edition:2011
+    },
+    {
+        title:'book four',genre:"science",publish:1999,
+        edition:2001
+    },
+    {
+        title:'book five',genre:"history",publish:2005,
+        edition:2009
+    },
+]
+
+
+let userBook=Books.filter( (bk)=>bk.publish>=2000)
+userBook=Books.filter((bk)=>bk.edition>=2000)
+userBook=Books.filter((bk)=>bk.genre==='history')
+
+console.log(userBook);
 
 
 
