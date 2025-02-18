@@ -141,46 +141,113 @@ jis order mai dale ussi order mai rehte hai
 
 // for in loop
 
-const s=["cpp","js","python","docker"]
+// const s=["cpp","js","python","docker"]
 
-for (const key in s) { // array ka key is index number only 
-    console.log(key);
+// for (const key in s) { // array ka key is index number only 
+//     console.log(key);
     
-}
+// }
 
-const newObj={
-    js:"javascript",
-    cpp:"c++",
-    py:"python"
-}
+// const newObj={
+//     js:"javascript",
+//     cpp:"c++",
+//     py:"python"
+// }
 
-for (const key in newObj) {
-    console.log(key); // yha pe object ki key aayi 
+// for (const key in newObj) {
+//     console.log(key); // yha pe object ki key aayi 
     
-}
-for (const key in newObj) {
-    console.log(newObj[key]); // yha pe object ki values aagyi  
+// }
+// for (const key in newObj) {
+//     console.log(newObj[key]); // yha pe object ki values aagyi  
     
-}
+// }
 
 
-const map=new Map() // Map is not iterable 
-map.set('IN',"India")
-map.set('USA',"United States of amercia")
-map.set('Fr',"France")
-map.set('IN',"India")
+// const map=new Map() // Map is not iterable 
+// map.set('IN',"India")
+// map.set('USA',"United States of amercia")
+// map.set('Fr',"France")
+// map.set('IN',"India")
 
 
-for (const key in map) {
-   console.log(key);
+// for (const key in map) {
+//    console.log(key);
    
-}
+// }
 
 
 // For Each Loop
 
 const coding=["java","ruby","cpp","python","js"]
 
-coding.forEach()
+// coding.forEach( function (item){ // callback hai isliye iska name nhi hai 
+//    console.log(item);
+   
+// })
+
+// coding.forEach( (val) =>{
+// console.log(val); //varibale ka naam kuch bhi de skate hai
+
+// })
+
+// function PrintMe(item){
+//     console.log(item);
+    
+// }
+// coding.forEach(PrintMe) // function ka refrence dena hai printing it will do by itself
+
+
+// coding.forEach( (item,index,arr)=>{
+//   console.log(item,index,arr);
+  
+// })
+
+
+// A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
+
+// There are two ways in which the callback may be called: synchronous and asynchronous. Synchronous callbacks are called immediately after the invocation of the outer function, with no intervening asynchronous tasks, while asynchronous callbacks are called at some point later, after an asynchronous operation has completed.
+
+
+const MyCoding=[ 
+    {
+
+     langName:"Java",
+     langFileName:"java"
+},
+    {
+
+     langName:"JavaScipt",
+     langFileName:"js"
+},
+    {
+
+     langName:"C++",
+     langFileName:"cpp"
+}
+]
+
+MyCoding.forEach( (item,index,arr)=>{
+ console.log(item.langName,index,arr);// sirf item krne se object milta sabko item hi bola hai saare objects ko
+ 
+})
+
+
+
+// Filter 
+
+const Nums=[1,2,3,4,5,6,7,8,9,10]
+
+// let NewNumber =Nums.filter( (item)=>item>4) // curly braces nhi lagye isliye without return work kiya
+// let NewNumber =Nums.filter( (item)=>{  //Filter return Statemnet unlike for Each which was giving undefined and not returning anything
+
+//     return item>4  // In Place of curly braces we need to write the return statement
+// }) 
+console.log(NewNumber);
+
+// The filter() method of Array instances creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function.
+
+
+
 
 
