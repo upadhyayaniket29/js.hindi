@@ -5,11 +5,51 @@
     
     <title>DOM Manipulation </title>
 </head>
-<body>
-    <div class="bg-black">
-        <h1>DOM Learning </h1>
+<body class="bg-black">
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+    <div >
+        <h1 id="title" class="heading">DOM Learning </h1>
         <p>Lorem ipsum dolor sit amet.</p>
         <!-- window is a object in js -->
+        <!-- Console.log(document.links) :- iT WILL SHOW HTML Collection not arrays -->
+         <!-- console.dir(document): for getting all elements in document objects -->
+         <!-- document.getElementById("title").className :It is Represnted as ClassName inside DOM -->
+          <!-- setattributes:always overwrite the attributes before  -->
+          <!--  title.innerText--:Inner text mai milta hai jo content visible hai  -->
+            <!-- title.textContent: pura text milta hai isme  -->
+            <!--  innerHTML mai andar mai jo HTML hai wo bhi show hoga  -->
+
+
+
+            <input type="password" name="" id="">
+
+            <ul>
+                <li class="list-item">One</li>
+                <li class="list-item">two</li>
+                <li class="list-item">three</li>
+                <li class="list-item">Four</li>
+            </ul>
+
+
+            <!--  NodeList mai changes aate hai :but it is not actually an array  -->
+
+            <!-- A NodeList object is a list (collection) of nodes extracted from a document.
+
+        A NodeList object is almost the same as an HTMLCollection object.
+
+        Some (older) browsers return a NodeList object instead of an HTMLCollection for methods like getElementsByClassName().
+
+        All browsers return a NodeList object for the property childNodes. 
+
+        Most browsers return a NodeList object for the method querySelectorAll(). -->
+
+
+
 
     </div>
    
