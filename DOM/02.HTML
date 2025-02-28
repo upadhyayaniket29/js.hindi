@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | chai aur code</title>
+</head>
+<body style="background-color: black;color: white;">
+    <div class="parent">
+        <!-- This is comment -->
+
+        <div class="day">Monday</div>
+
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+
+
+
+
+    </div>
+    <!-- Only one line break will count browser will not count other  -->
+    
+</body>
+<script>
+    const parent=document.querySelector('.parent')
+    // console.log(parent);
+    // console.log(parent.children); // output HTML Collection milega
+    // console.log(parent.children[1]); 
+    // console.log(parent.children[1].innerHTML);
+    
+    
+    for (let i = 0; i < parent.children.length; i++) {
+    console.log(parent.children[i].innerHTML)  
+         }
+
+        //  parent.children.style.color="orange" ////Since children is a collection, you need to use an index [0], [1], etc., to select a specific child.
+         parent.children[0].style.color="orange"
+         parent.children[0].style.padding="20px"
+
+         console.log(parent.firstChild); //First node (can be text, comment, or element)
+         console.log(parent.firstElementChild)
+        //  The firstElementChild property is used to get the first child element (excluding text nodes and comments) of a parent element.
+         console.log(parent.lastElementChild);
+
+         const dayOne=document.querySelector('.day')
+         console.log(dayOne);
+         console.log(dayOne.nextElementSibling)
+
+
+        //  ++++++++Important++++++++++++++++++++
+        // Browser is making the tree ds to run this 
+         console.log(parent.childNodes) // It includes everything , Space text nodes etc..
+         
+
+    
+</script>
+</html>
