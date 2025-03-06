@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>Chai aur JS</h1>
+     <button id="start">Start</button>
+     <button id="stop">Stop</button>
+</body>
+<script>
+    const sayDate=  function (str){
+        console.log(str,Date.now());
+    }
+    
+
+    document.querySelector("#start").addEventListener('click',function(){
+        intervalid=setInterval(sayDate,2000,"aniket")
+       
+    })
+
+    document.querySelector("#stop").addEventListener('click',function(){
+        clearInterval(intervalid)
+        console.log("stopped");
+        
+    })
+
+    // clearInterval(sayDate) is incorrect because clearInterval requires an interval ID, not the function itself.
+          
+    
+
+    
+
+  
+
+</script>
+
+
+
+</html>

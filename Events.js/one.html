@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>Chai aur Code</h1>
+     <button id="stop">Stop</button>
+</body>
+<script>
+
+    setTimeout(function(){
+        console.log("aniket")
+    },2000)
+
+  const changeText=function(){
+      document.querySelector('h1').innerHTML="Best js series"
+  }
+
+  const changeME =setTimeout(changeText,3000)
+
+//   clearTimeout(changeME) // clearTimeOut Stops the TimeOut of the function
+
+
+
+// Here on clicking on this stop button it stops to change 
+
+  document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout(changeME)
+    console.log("stopped")
+  })
+
+//    clearTimeout Need reference
+
+/*The setTimeout() method of the Window interface sets a timer which executes a function or specified piece of code once the timer expires.*/
+
+</script>
+
+
+
+</html>
