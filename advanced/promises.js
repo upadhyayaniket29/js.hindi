@@ -71,5 +71,32 @@ return user.username
 })
 
 const PromiseFive=new Promise((resolve,reject)=>{
-
+    setTimeout(function(){
+        let error=true;
+        if (!error) {
+            resolve({username:"Javascript",password:"123"})
+        }else{
+            reject('ERROR :JS went wrong')
+        }
+    },1000)
 })
+
+
+// async / await directly can't handle the errors
+async function consumePromisefive (){
+   try {
+    const Response=await PromiseFive
+    console.log(Response);
+    
+   } catch (error) {
+    console.log(error);
+    
+   }
+}
+
+consumePromisefive()
+
+/*
+Handling errors gracefully means managing errors in a way that prevents your program from crashing and provides a meaningful response to the user or system. Instead of letting an error break the application, you catch it, log it, and possibly recover from it.
+
+*/
