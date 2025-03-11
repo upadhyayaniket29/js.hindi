@@ -1,3 +1,7 @@
+//  Error comes only when browser does not able to make requests only 
+// ERROR 404 also will be coming in response only 
+
+
 const promiseOne=new Promise(function(resolve,reject){
     // Do an async task
     // DB Calls
@@ -100,3 +104,8 @@ consumePromisefive()
 Handling errors gracefully means managing errors in a way that prevents your program from crashing and provides a meaningful response to the user or system. Instead of letting an error break the application, you catch it, log it, and possibly recover from it.
 
 */
+
+
+// +++++Fetch +++++++
+
+fetch('https//aniket.com',{header}) // yha pe curly braces ke andar jo chaye wo bhej sakte hai 
