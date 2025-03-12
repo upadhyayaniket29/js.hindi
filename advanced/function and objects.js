@@ -12,6 +12,9 @@ console.log(multiply.power);
 console.log(multiply.prototype);
 
 
+// js give constructor function using new keyword 
+
+
 
 
 /*
